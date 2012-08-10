@@ -1,0 +1,27 @@
+%header
+  %hgroup
+    %h1#logo AFNetworking
+    %h2.tagline a delightful networking framework for iOS and OSX
+
+  .call-to-action
+    %div{role: 'container'}
+      %ul
+        %li.icon-documentation
+          %a{href: "https://github.com/AFNetworking/AFNetworking"} Read the   Documentation
+        %li.icon-twitter
+          %a{href: "https://twitter.com/AFNetworking"} Follow us on Twitter
+        %li.icon-support
+          %a{href: "#"} Get Support
+  
+      %button#download{onclick: "window.location.href='/download'"}
+        %span.symbol ↓
+        %div
+          %span Download Source
+          %small Version 0.10.1
+
+%section.endorsements
+  %h1.tk-caflisch used by thousands of developers, including these fine companies:
+  %ul.companies
+    - for company, url in [["GitHub", "https://github.com"], ["Pinterest", "http://pinterest.com"], ["Heroku", "http://www.heroku.com"], ["Mutual Mobile", "http://www.mutualmobile.com"], ["Simple", "https://www.simple.com"]]
+      %li{class: company.downcase.gsub(/\s+/, '-')}
+        %a{href: url, title: company, rel: 'nofollow'}= company

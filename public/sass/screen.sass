@@ -1,0 +1,151 @@
+@import "compass"
+@import "blueprint"
+
+@import "./functions"
+@import "./fonts"
+@import "./button"
+
+$background-color: #f05423
+$text-color: #e7e7e7
+
++blueprint-typography
+
+div[role="container"]
+  +container
+
+html
+  background: $background-color image-url('bg.png')
+  
+  body
+    +text-shadow(0px 1px 1px transparentize(#333, 0.2))
+    color: $text-color
+    margin: 10px 0
+    -webkit-background-clip: padding-box
+
+    a
+      color: $text-color !important
+
+      &:hover
+        text-decoration: none
+
+hgroup, div[role="container"]
+  +container
+  width: +span(18)
+
+section, footer
+  +container
+
+header
+  +clearfix
+  margin: 0 auto 30px auto
+
+  hgroup
+    text-align: center
+
+    h1
+      background: image-url("afnetworking.png") center center no-repeat
+      text-indent: -9999px
+      color: transparent
+      height: 225px
+      margin-top: 10px
+
+    h2
+      +text-shadow(1px 1px 2px #2d2828)
+      font-size: 3em
+      font-weight: 700
+      margin-top: 0
+      color: $text-color
+
+
+  .call-to-action
+    +clearfix
+    +box-shadow(0px 4px 6px #444, 0px 2px 12px transparentize(#000, 0.5) inset)
+    padding: 30px 0
+    background: transparentize(#222, 0.1)
+    border-top: 1px #c57f42 solid
+    border-bottom: 1px #c57f42 solid
+
+  ul
+    +column(8)
+    padding: 0
+    margin-bottom: 0
+    margin-left: 55px
+
+    li
+      +text-shadow(0px 1px 1px #101010)
+      list-style: none
+      font-size: 1.5em
+
+      a
+        text-decoration: none
+        padding-left: 12px
+
+        &:hover
+          text-decoration: underline
+
+      &.icon-documentation a
+        padding-left: 15px
+
+        
+  button
+    +column(10, true)
+
+    .symbol
+      +column(1)
+      font-size: 3em
+      margin-top: 0.625em
+      margin-right: 0.5em
+      margin-left: 0.25em
+      text-align: center
+
+    div
+      span
+        font-size: 1.5em
+        margin-top: -0.325em
+      small
+        margin-top: -0.75em
+
+.endorsements h1
+  color: $text-color
+  font-size: 2em
+  font-weight: 300
+  text-align: center
+  margin: 0 0 0.25em 0
+
+.companies
+  +clearfix
+  padding: 0
+  margin: 0 auto
+
+  li
+    +column(4)
+    +append(1)
+    height: 60px
+    display: block
+
+    &:last-child
+      +column(4, true)
+      padding-right: 0
+    @each $company in ('github', 'pinterest', 'heroku', 'mutual-mobile', 'simple')
+      &.#{$company}
+        background: image-url('companies/#{$company}.png') center center no-repeat
+
+    a
+      display: block
+      text-indent: -9999px
+      width: 100%
+      height: 100%
+
+footer
+  text-align: center
+  padding-top: 2em
+
+#github.ribbon
+  position: absolute
+  top: 0
+  right: 0
+  border: 0
+  
+  &, &:hover
+    +transition(none)
+    background: transparent
