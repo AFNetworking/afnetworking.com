@@ -446,7 +446,7 @@ header .call-to-action {
   -moz-box-shadow: 0px 4px 6px #444444, 0px 2px 12px rgba(0, 0, 0, 0.5) inset;
   box-shadow: 0px 4px 6px #444444, 0px 2px 12px rgba(0, 0, 0, 0.5) inset;
   padding: 30px 0;
-  background: rgba(34, 34, 34, 0.9);
+  background: rgba(34, 34, 34, 0.75);
   border-top: 1px #c57f42 solid;
   border-bottom: 1px #c57f42 solid;
 }
