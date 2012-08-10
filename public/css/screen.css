@@ -44,6 +44,7 @@
 
 /* line 1, ../sass/_button.sass */
 button#download {
+  cursor: pointer;
   float: right;
   margin: 0 0 5px;
   line-height: 28px;
@@ -91,7 +92,7 @@ button#download {
   position: relative;
   top: 8px;
 }
-/* line 2, ../sass/_button.sass */
+/* line 4, ../sass/_button.sass */
 button#download * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -101,28 +102,28 @@ button#download * {
   user-select: none;
   display: block;
 }
-/* line 6, ../sass/_button.sass */
+/* line 8, ../sass/_button.sass */
 button#download div {
   float: left;
   text-align: left;
   padding: 0.5em;
   margin-top: 1em;
 }
-/* line 12, ../sass/_button.sass */
+/* line 14, ../sass/_button.sass */
 button#download div strong {
   font-size: 2em;
   line-height: 0.75em;
 }
-/* line 16, ../sass/_button.sass */
+/* line 18, ../sass/_button.sass */
 button#download div small {
   font-size: 1em;
 }
-/* line 48, ../sass/_button.sass */
+/* line 50, ../sass/_button.sass */
 button#download:hover, button#download:active {
   background: #f6ba49;
   border-top-color: #e5ab3d;
 }
-/* line 52, ../sass/_button.sass */
+/* line 54, ../sass/_button.sass */
 button#download:active {
   vertical-align: -5px;
   margin-bottom: 0;
@@ -525,7 +526,7 @@ header button div small {
   font-size: 2em;
   font-weight: 300;
   text-align: center;
-  margin: 0 0 0.25em 0;
+  margin: 0 0 0.5em 0;
 }
 
 /* line 115, ../sass/screen.sass */
