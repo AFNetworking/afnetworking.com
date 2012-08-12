@@ -13,6 +13,10 @@ $text-color: #e7e7e7
 div[role="container"]
   +container
 
+::selection, ::-moz-selection
+  background: $background-color
+  color: $text-color
+
 html
   background: $background-color image-url('bg.png')
   
@@ -43,6 +47,7 @@ header
     text-align: center
 
     h1
+      +prevent-selection
       background: image-url("afnetworking.png") center center no-repeat
       text-indent: -9999px
       color: transparent
@@ -114,6 +119,7 @@ header
 
 .companies
   +clearfix
+  +prevent-selection
   padding: 0
   margin: 0 auto
 
@@ -141,6 +147,7 @@ footer
   padding-top: 2em
 
 #github.ribbon
+  +prevent-selection
   position: absolute
   top: 0
   right: 0

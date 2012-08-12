@@ -376,26 +376,32 @@ div[role="container"] {
 }
 
 /* line 16, ../sass/screen.sass */
+::selection, ::-moz-selection {
+  background: #f05423;
+  color: #e7e7e7;
+}
+
+/* line 20, ../sass/screen.sass */
 html {
   background: #f05423 url('/images/bg.png?1344529548');
 }
-/* line 19, ../sass/screen.sass */
+/* line 23, ../sass/screen.sass */
 html body {
   text-shadow: 0px 1px 1px rgba(51, 51, 51, 0.8);
   color: #e7e7e7;
   margin: 10px 0;
   -webkit-background-clip: padding-box;
 }
-/* line 25, ../sass/screen.sass */
+/* line 29, ../sass/screen.sass */
 html body a {
   color: #e7e7e7 !important;
 }
-/* line 28, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
 html body a:hover {
   text-decoration: none;
 }
 
-/* line 31, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 hgroup, div[role="container"] {
   width: 950px;
   margin: 0 auto;
@@ -404,7 +410,7 @@ hgroup, div[role="container"] {
   width: 710px;
 }
 
-/* line 35, ../sass/screen.sass */
+/* line 39, ../sass/screen.sass */
 section, footer {
   width: 950px;
   margin: 0 auto;
@@ -412,25 +418,31 @@ section, footer {
   *zoom: 1;
 }
 
-/* line 38, ../sass/screen.sass */
+/* line 42, ../sass/screen.sass */
 header {
   overflow: hidden;
   *zoom: 1;
   margin: 0 auto 30px auto;
 }
-/* line 42, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 header hgroup {
   text-align: center;
 }
-/* line 45, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 header hgroup h1 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background: url('/images/afnetworking.png?1344631552') center center no-repeat;
   text-indent: -9999px;
   color: transparent;
   height: 225px;
   margin-top: 10px;
 }
-/* line 52, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 header hgroup h2 {
   text-shadow: 1px 1px 2px #2d2828;
   font-size: 3em;
@@ -438,7 +450,7 @@ header hgroup h2 {
   margin-top: 0;
   color: #e7e7e7;
 }
-/* line 60, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 header .call-to-action {
   overflow: hidden;
   *zoom: 1;
@@ -450,7 +462,7 @@ header .call-to-action {
   border-top: 1px #c57f42 solid;
   border-bottom: 1px #c57f42 solid;
 }
-/* line 68, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 header ul {
   display: inline;
   float: left;
@@ -464,26 +476,26 @@ header ul {
 * html header ul {
   overflow-x: hidden;
 }
-/* line 74, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 header ul li {
   text-shadow: 0px 1px 1px #101010;
   list-style: none;
   font-size: 1.5em;
 }
-/* line 79, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
 header ul li a {
   text-decoration: none;
   padding-left: 12px;
 }
-/* line 83, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 header ul li a:hover {
   text-decoration: underline;
 }
-/* line 86, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 header ul li.icon-documentation a {
   padding-left: 15px;
 }
-/* line 90, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 header button {
   display: inline;
   float: left;
@@ -494,7 +506,7 @@ header button {
 * html header button {
   overflow-x: hidden;
 }
-/* line 93, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 header button .symbol {
   display: inline;
   float: left;
@@ -510,17 +522,17 @@ header button .symbol {
 * html header button .symbol {
   overflow-x: hidden;
 }
-/* line 102, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 header button div span {
   font-size: 1.5em;
   margin-top: -0.325em;
 }
-/* line 105, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 header button div small {
   margin-top: -0.75em;
 }
 
-/* line 108, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 .endorsements h1 {
   color: #e7e7e7;
   font-size: 2em;
@@ -529,14 +541,20 @@ header button div small {
   margin: 0 0 0.5em 0;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 .companies {
   overflow: hidden;
   *zoom: 1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   padding: 0;
   margin: 0 auto;
 }
-/* line 120, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 .companies li {
   display: inline;
   float: left;
@@ -550,7 +568,7 @@ header button div small {
 * html .companies li {
   overflow-x: hidden;
 }
-/* line 126, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 .companies li:last-child {
   display: inline;
   float: left;
@@ -562,27 +580,27 @@ header button div small {
 * html .companies li:last-child {
   overflow-x: hidden;
 }
-/* line 130, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .companies li.github {
   background: url('/images/companies/github.png?1344536552') center center no-repeat;
 }
-/* line 130, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .companies li.pinterest {
   background: url('/images/companies/pinterest.png?1344537639') center center no-repeat;
 }
-/* line 130, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .companies li.heroku {
   background: url('/images/companies/heroku.png?1344536595') center center no-repeat;
 }
-/* line 130, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .companies li.mutual-mobile {
   background: url('/images/companies/mutual-mobile.png?1344537525') center center no-repeat;
 }
-/* line 130, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .companies li.simple {
   background: url('/images/companies/simple.png?1344537769') center center no-repeat;
 }
-/* line 133, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 .companies li a {
   display: block;
   text-indent: -9999px;
@@ -590,20 +608,26 @@ header button div small {
   height: 100%;
 }
 
-/* line 139, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 footer {
   text-align: center;
   padding-top: 2em;
 }
 
-/* line 143, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 #github.ribbon {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   top: 0;
   right: 0;
   border: 0;
 }
-/* line 149, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #github.ribbon, #github.ribbon:hover {
   -webkit-transition: none;
   -moz-transition: none;
