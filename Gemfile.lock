@@ -11,7 +11,7 @@ GEM
     fssm (0.2.9)
     haml (3.1.6)
     rack (1.4.1)
-    rack-google-analytics (0.10.0)
+    rack-gauges (1.1.0)
     rack-protection (1.2.0)
       rack
     rack-typekit (0.2.0)
@@ -34,7 +34,7 @@ PLATFORMS
 DEPENDENCIES
   compass
   haml
-  rack-google-analytics
+  rack-gauges
   rack-typekit
   rdiscount
   sinatra
