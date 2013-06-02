@@ -1,4 +1,4 @@
-class App < Sinatra::Base
+class Web < Sinatra::Base
   get '/' do
     @version = ENV['AFNETWORKING_VERSION'] || "1.0.0"
 
