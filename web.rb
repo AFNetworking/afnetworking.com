@@ -1,11 +1,11 @@
 class Web < Sinatra::Base
   get '/' do
-    @version = ENV['AFNETWORKING_VERSION'] || "1.0.0"
+    @version = File.basename(ENV['AFNETWORKING_DOWNLOAD_URL'], ".zip").scan(/\d+/)[0...3].join(".") || "0.0.0"
 
     haml :index
   end
 
   get '/download' do
-    redirect "https://github.com/AFNetworking/AFNetworking/zipball/master"
+    redirect ENV['AFNETWORKING_DOWNLOAD_URL']
   end
 end
